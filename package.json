@@ -1,0 +1,91 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@date-io/moment": "^2.4.0",
+    "@material-ui/core": "^4.9.4",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.46",
+    "@material-ui/pickers": "^3.2.10",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/classnames": "^2.2.9",
+    "@types/history": "^4.7.5",
+    "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.149",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router": "^5.1.4",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/uuid": "^3.4.7",
+    "@types/yup": "^0.26.32",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.11.0",
+    "formik": "^2.1.4",
+    "history": "^4.10.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "notistack": "^0.9.8",
+    "prettier": "^2.0.2",
+    "react": "^16.12.0",
+    "react-datasheet": "^1.4.1",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "typescript": "3.8.3",
+    "uuid": "^7.0.0",
+    "yup": "^0.28.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tsAndLint": "tsc --noEmit && eslint */**/*.{js,ts,tsx}",
+    "lint": "eslint --cache */**/*.{js,ts,tsx}",
+    "lint-fix": "eslint */**/*.{js,ts,tsx} --quiet --fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
